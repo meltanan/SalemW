@@ -27,7 +27,7 @@ class HomeActivity : AppCompatActivity(), SelectListener {
     private fun addNumber(number: Int) {
         viewModel.viewModelScope.launch {
             val result = viewModel.addingNumber(number)
-            showToast(result.toString())
+            showToast("The value is $result")
         }
     }
 
